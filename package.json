@@ -22,8 +22,8 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name vuecal ./src/components/vue-cal/index.vue --dest ./dist",
+    "build": "vue build",
+    "build-bundle": "vue build --target lib --name vuecal ./src/components/vue-cal/index.vue --dest ./dist",
     "lint": "vue-cli-service lint"
   },
   "devDependencies": {

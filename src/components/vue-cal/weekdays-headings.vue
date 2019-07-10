@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import { isDateToday } from './date-utils'
-import { selectCell } from './cell-utils'
+import { isDateToday } from "./date-utils";
+import { selectCell } from "./cell-utils";
 
 export default {
   props: {
@@ -32,7 +32,7 @@ export default {
     },
     transitionDirection: {
       type: String,
-      default: 'right'
+      default: "right"
     },
     weekDays: {
       type: Array,
@@ -50,49 +50,65 @@ export default {
   },
 
   methods: {
-    selectCell (date) {
-      selectCell(null, date, this.vuecal)
+    selectCell(date) {
+      selectCell(null, date, this.vuecal);
     }
   },
   computed: {
-    headings () {
-      let headings = []
+    headings() {
+      let headings = [];
 
       switch (this.view.id) {
-        case 'month':
-        case 'week':
-          let todayFound = false
+        case "month":
+        case "week":
+          let todayFound = false;
           headings = this.weekDays.map((cell, i) => {
-            const date = this.view.startDate.addDays(i)
+            const date = this.view.startDate.addDays(i);
 
             return {
-                full: this.weekDaysShort ? this.weekDaysShort[i].label : cell.label.substr(0, 3)
+              full: this.weekDaysShort
+                ? this.weekDaysShort[i].label
+                : cell.label.substr(0, 3),
               //full: cell.label,
               // If defined in i18n file, weekDaysShort overrides default truncation of
               // week days when does not fit on screen or with small/xsmall options.
-              small: this.weekDaysShort ? this.weekDaysShort[i].label : cell.label.substr(0, 3),
-              xsmall: this.weekDaysShort ? this.weekDaysShort[i].label : cell.label.substr(0, 1),
+              small: this.weekDaysShort
+                ? this.weekDaysShort[i].label
+                : cell.label.substr(0, 3),
+              xsmall: this.weekDaysShort
+                ? this.weekDaysShort[i].label
+                : cell.label.substr(0, 1),
 
               // Only for week view.
-              ...(this.view.id === 'week' ? {
-                dayOfMonth: date.getDate(),
-                date,
-                today: !todayFound && isDateToday(date) && !todayFound++
-              } : {})
-            }
-          })
-          break
+              ...(this.view.id === "week"
+                ? {
+                    dayOfMonth: date.getDate(),
+                    date,
+                    today: !todayFound && isDateToday(date) && !todayFound++
+                  }
+                : {})
+            };
+          });
+          break;
       }
-      return headings
+      return headings;
     },
-    weekdayCellStyles () {
-      return { minWidth: this.vuecal.minCellWidth && this.view.id === 'week' ? `${this.vuecal.minCellWidth}px` : null }
+    weekdayCellStyles() {
+      return {
+        minWidth:
+          this.vuecal.minCellWidth && this.view.id === "week"
+            ? `${this.vuecal.minCellWidth}px`
+            : null
+      };
     },
-    cellHeadingsClickable () {
-      return this.view.id === 'week' && (this.vuecal.clickToNavigate || this.vuecal.dblClickToNavigate)
+    cellHeadingsClickable() {
+      return (
+        this.view.id === "week" &&
+        (this.vuecal.clickToNavigate || this.vuecal.dblClickToNavigate)
+      );
     }
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -129,19 +145,40 @@ $weekdays-headings-height: 2.8em;
     position: relative;
     overflow: hidden;
 
-    .vuecal--month-view &, .vuecal--week-view &, .vuecal--day-view & {width: 14.2857%;}
+    .vuecal--month-view &,
+    .vuecal--week-view &,
+    .vuecal--day-view & {
+      width: 14.2857%;
+    }
     .vuecal--hide-weekends.vuecal--month-view &,
     .vuecal--hide-weekends.vuecal--week-view &,
-    .vuecal--hide-weekends.vuecal--day-view & {width: 20%;}
-    .vuecal--years-view & {width: 20%;}
-    .vuecal--year-view & {width: 33.33%;}
+    .vuecal--hide-weekends.vuecal--day-view & {
+      width: 20%;
+    }
+    .vuecal--years-view & {
+      width: 20%;
+    }
+    .vuecal--year-view & {
+      width: 33.33%;
+    }
 
-    & > span {flex-shrink: 0;display: flex;}
+    & > span {
+      flex-shrink: 0;
+      display: flex;
+    }
 
-    .vuecal--small & .small, .vuecal--xsmall & .xsmall {display: block;}
-    .small, .xsmall,
-    .vuecal--small & .full, .vuecal--small & .xsmall,
-    .vuecal--xsmall & .full, .vuecal--xsmall & .small {display: none;}
+    .vuecal--small & .small,
+    .vuecal--xsmall & .xsmall {
+      display: block;
+    }
+    .small,
+    .xsmall,
+    .vuecal--small & .full,
+    .vuecal--small & .xsmall,
+    .vuecal--xsmall & .full,
+    .vuecal--xsmall & .small {
+      display: none;
+    }
   }
 }
 
@@ -153,17 +190,31 @@ $weekdays-headings-height: 2.8em;
 
     .small,
     .vuecal--small & .small,
-    .vuecal--xsmall & .xsmall {display: block;}
-    .full, .xsmall,
-    .vuecal--small & .full, .vuecal--small & .xsmall,
-    .vuecal--xsmall & .full, .vuecal--xsmall & .small {display: none;}
+    .vuecal--xsmall & .xsmall {
+      display: block;
+    }
+    .full,
+    .xsmall,
+    .vuecal--small & .full,
+    .vuecal--small & .xsmall,
+    .vuecal--xsmall & .full,
+    .vuecal--xsmall & .small {
+      display: none;
+    }
 
     .vuecal--overflow-x & .full,
     .vuecal--small.vuecal--overflow-x & .small,
-    .vuecal--xsmall.vuecal--overflow-x & .xsmall {display: block;}
-    .vuecal--overflow-x & .small, .vuecal--overflow-x & .xsmall,
-    .vuecal--small.vuecal--overflow-x & .full, .vuecal--small.vuecal--overflow-x & .xsmall,
-    .vuecal--xsmall.vuecal--overflow-x & .full, .vuecal--xsmall.vuecal--overflow-x & .small {display: none;}
+    .vuecal--xsmall.vuecal--overflow-x & .xsmall {
+      display: block;
+    }
+    .vuecal--overflow-x & .small,
+    .vuecal--overflow-x & .xsmall,
+    .vuecal--small.vuecal--overflow-x & .full,
+    .vuecal--small.vuecal--overflow-x & .xsmall,
+    .vuecal--xsmall.vuecal--overflow-x & .full,
+    .vuecal--xsmall.vuecal--overflow-x & .small {
+      display: none;
+    }
   }
 }
 
@@ -171,15 +222,28 @@ $weekdays-headings-height: 2.8em;
   .vuecal__heading {
     .xsmall,
     .vuecal--small & .xsmall,
-    .vuecal--xsmall & .xsmall {display: block;}
-    .full, .small,
-    .vuecal--small & .full, .vuecal--small & .small,
-    .vuecal--xsmall & .full, .vuecal--xsmall & .small {display: none;}
+    .vuecal--xsmall & .xsmall {
+      display: block;
+    }
+    .full,
+    .small,
+    .vuecal--small & .full,
+    .vuecal--small & .small,
+    .vuecal--xsmall & .full,
+    .vuecal--xsmall & .small {
+      display: none;
+    }
 
     .vuecal--small.vuecal--overflow-x & .small,
-    .vuecal--xsmall.vuecal--overflow-x & .xsmall {display: block;}
-    .vuecal--small.vuecal--overflow-x & .full, .vuecal--small.vuecal--overflow-x & .xsmall,
-    .vuecal--xsmall.vuecal--overflow-x & .full, .vuecal--xsmall.vuecal--overflow-x & .small {display: none;}
+    .vuecal--xsmall.vuecal--overflow-x & .xsmall {
+      display: block;
+    }
+    .vuecal--small.vuecal--overflow-x & .full,
+    .vuecal--small.vuecal--overflow-x & .xsmall,
+    .vuecal--xsmall.vuecal--overflow-x & .full,
+    .vuecal--xsmall.vuecal--overflow-x & .small {
+      display: none;
+    }
   }
 }
 </style>
