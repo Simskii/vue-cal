@@ -1916,7 +1916,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"34e2ea1b-vue-loader-template"}!/Users/simon/.config/yarn/global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/vue-cal/index.vue?vue&type=template&id=e3998312&lang=pug&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"34e2ea1b-vue-loader-template"}!/Users/simon/.config/yarn/global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/vue-cal/index.vue?vue&type=template&id=5d67779e&lang=pug&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"vuecal",staticClass:"vuecal__flex vuecal",class:_vm.cssClasses,attrs:{"column":"","lang":_vm.locale}},[_c('vuecal-header',{attrs:{"options":_vm.$props,"view-props":{ views: _vm.views, view: _vm.view, weekDaysInHeader: _vm.weekDaysInHeader },"months":_vm.months,"week-days":_vm.weekDays,"week-days-short":_vm.weekDaysShort,"switch-to-narrower-view":_vm.switchToNarrowerView}},[_vm._t("arrow-prev",[_c('i',{staticClass:"angle"})],{"slot":"arrow-prev"}),_vm._t("arrow-next",[_c('i',{staticClass:"angle"})],{"slot":"arrow-next"}),_vm._t("today-button",[_c('span',{staticClass:"default"},[_vm._v(_vm._s(_vm.texts.today))])],{"slot":"today-btn"}),_vm._t("title",[_vm._v(_vm._s(_vm.viewTitle))],{"slot":"title","title":_vm.viewTitle,"view":_vm.view})],2),(!_vm.hideBody)?_c('div',{staticClass:"vuecal__flex vuecal__body",attrs:{"grow":""}},[_c('transition',{attrs:{"name":("slide-fade--" + _vm.transitionDirection),"appear":_vm.transitions}},[_c('div',{key:_vm.transitions ? _vm.view.id : false,staticClass:"vuecal__flex",staticStyle:{"min-width":"100%"},attrs:{"column":""}},[(_vm.showAllDayEvents && _vm.hasTimeColumn)?_c('div',{staticClass:"vuecal__flex vuecal__all-day"},[_c('span',{staticStyle:{"width":"3em"}},[_c('span',[_vm._v(_vm._s(_vm.texts.allDay))])]),_c('div',{staticClass:"vuecal__flex vuecal__cells",class:((_vm.view.id) + "-view"),attrs:{"grow":"","wrap":!_vm.minCellWidth || _vm.view.id !== 'week',"column":!!_vm.minCellWidth}},_vm._l((_vm.viewCells),function(cell,i){return _c('vuecal-cell',{key:i,attrs:{"options":_vm.$props,"data":cell,"all-day":true,"min-timestamp":_vm.minTimestamp,"max-timestamp":_vm.maxTimestamp,"splits":_vm.hasSplits && _vm.splitDays || []},scopedSlots:_vm._u([{key:"event-renderer",fn:function(ref){
 var event = ref.event;
 var view = ref.view;
@@ -1931,7 +1931,7 @@ return _c('div',{attrs:{"view":view,"event":event}},[_vm._t("event-renderer",[(_
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/vue-cal/index.vue?vue&type=template&id=e3998312&lang=pug&
+// CONCATENATED MODULE: ./src/components/vue-cal/index.vue?vue&type=template&id=5d67779e&lang=pug&
 
 // EXTERNAL MODULE: /Users/simon/.config/yarn/global/node_modules/core-js/modules/es7.object.get-own-property-descriptors.js
 var es7_object_get_own_property_descriptors = __webpack_require__("c6e0");
@@ -3660,16 +3660,16 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
 
 /* harmony default export */ var vue_calvue_type_script_lang_js_ = ({
-  name: 'vue-cal',
+  name: "vue-cal",
   components: {
-    'vuecal-cell': vue_cal_cell,
-    'vuecal-header': header,
+    "vuecal-cell": vue_cal_cell,
+    "vuecal-header": header,
     WeekdaysHeadings: weekdays_headings
   },
   props: {
     locale: {
       type: String,
-      default: 'en'
+      default: "en"
     },
     hideViewSelector: {
       type: Boolean,
@@ -3695,7 +3695,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
     },
     defaultView: {
       type: String,
-      default: 'week'
+      default: "week"
     },
     todayButton: {
       type: Boolean,
@@ -3707,15 +3707,15 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
     },
     selectedDate: {
       type: [String, Date],
-      default: ''
+      default: ""
     },
     minDate: {
       type: [String, Date],
-      default: ''
+      default: ""
     },
     maxDate: {
       type: [String, Date],
-      default: ''
+      default: ""
     },
     startWeekOnSunday: {
       type: Boolean,
@@ -3761,13 +3761,13 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       default: 40 // In pixels.
 
     },
-    '12Hour': {
+    "12Hour": {
       type: Boolean,
       default: false
     },
     timeFormat: {
       type: String,
-      default: ''
+      default: ""
     },
     minCellWidth: {
       type: Number,
@@ -3820,26 +3820,26 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
   },
   data: function data() {
     return {
-      texts: this.locale === 'en' ? __webpack_require__("7213") : {
-        weekDays: Array(7).fill(''),
-        months: Array(12).fill(''),
-        years: '',
-        year: '',
-        month: '',
-        week: '',
-        day: '',
-        today: '',
-        noEvent: '',
-        allDay: '',
-        deleteEvent: '',
-        createEvent: '',
-        dateFormat: 'DDDD mmmm d, yyyy'
+      texts: this.locale === "en" ? __webpack_require__("7213") : {
+        weekDays: Array(7).fill(""),
+        months: Array(12).fill(""),
+        years: "",
+        year: "",
+        month: "",
+        week: "",
+        day: "",
+        today: "",
+        noEvent: "",
+        allDay: "",
+        deleteEvent: "",
+        createEvent: "",
+        dateFormat: "DDDD mmmm d, yyyy"
       },
       ready: false,
       now: now,
       view: {
-        id: '',
-        title: '',
+        id: "",
+        title: "",
         startDate: null,
         endDate: null,
         selectedDate: null
@@ -3885,7 +3885,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       },
       mutableEvents: {},
       // An indexed array of mutable events updated each time given events array changes.
-      transitionDirection: 'right'
+      transitionDirection: "right"
     };
   },
   methods: {
@@ -3897,7 +3897,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
     switchToNarrowerView: function switchToNarrowerView() {
       var _this = this;
 
-      this.transitionDirection = 'right';
+      this.transitionDirection = "right";
       var views = Object.keys(this.views);
       views = views.slice(views.indexOf(this.view.id) + 1);
       var view = views.find(function (v) {
@@ -3913,7 +3913,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
       if (this.transitions && fromViewSelector) {
         var views = Object.keys(this.views);
-        this.transitionDirection = views.indexOf(this.view.id) > views.indexOf(view) ? 'left' : 'right';
+        this.transitionDirection = views.indexOf(this.view.id) > views.indexOf(view) ? "left" : "right";
       }
 
       this.view.events = [];
@@ -3926,11 +3926,11 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
       if (!date) {
         date = this.view.selectedDate || this.view.startDate;
-        if (view === 'week') date = getPreviousFirstDayOfWeek(date, this.startWeekOnSunday);
+        if (view === "week") date = getPreviousFirstDayOfWeek(date, this.startWeekOnSunday);
       }
 
       switch (view) {
-        case 'years':
+        case "years":
           // Always fill first cell with a multiple of 25 years, E.g. year 2000, or 2025.
           this.view.startDate = new Date(Math.floor(date.getFullYear() / 25) * 25 || 2000, 0, 1);
           this.view.endDate = new Date(this.view.startDate.getFullYear() + 25, 0, 1);
@@ -3938,14 +3938,14 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
           break;
 
-        case 'year':
+        case "year":
           this.view.startDate = new Date(date.getFullYear(), 0, 1);
           this.view.endDate = new Date(date.getFullYear() + 1, 0, 1);
           this.view.endDate.setSeconds(-1); // End at 23:59:59.
 
           break;
 
-        case 'month':
+        case "month":
           this.view.startDate = new Date(date.getFullYear(), date.getMonth(), 1);
           this.view.endDate = new Date(date.getFullYear(), date.getMonth() + 1, 1);
           this.view.endDate.setSeconds(-1); // End at 23:59:59.
@@ -3972,7 +3972,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
             cellDate = startDate.addDays(i);
 
             if (currentMonth !== cellDate.getMonth()) {
-              formattedDate = formatDate(cellDate, 'yyyy-mm-dd', this.texts);
+              formattedDate = formatDate(cellDate, "yyyy-mm-dd", this.texts);
               dayEvents = this.mutableEvents[formattedDate] || [];
 
               if (dayEvents.length) {
@@ -3989,7 +3989,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
             var _this$view$events;
 
             dateTmp = dateTmp.addDays(1);
-            formattedDate = formatDate(dateTmp, 'yyyy-mm-dd', this.texts); // Save the events of each day of month into view object.
+            formattedDate = formatDate(dateTmp, "yyyy-mm-dd", this.texts); // Save the events of each day of month into view object.
 
             dayEvents = this.mutableEvents[formattedDate] || [];
             if (dayEvents.length) (_this$view$events = this.view.events).push.apply(_this$view$events, _toConsumableArray(dayEvents.map(function (e) {
@@ -3999,7 +3999,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
           break;
 
-        case 'week':
+        case "week":
           this.view.startDate = this.hideWeekends && this.startWeekOnSunday ? date.addDays(1) : date;
           this.view.endDate = date.addDays(7);
           this.view.endDate.setSeconds(-1); // End at 23:59:59.
@@ -4009,7 +4009,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
           for (var _i = 0; _i < 7; _i++) {
             var _this$view$events2;
 
-            formattedDate = formatDate(dateTmp.addDays(_i), 'yyyy-mm-dd', this.texts);
+            formattedDate = formatDate(dateTmp.addDays(_i), "yyyy-mm-dd", this.texts);
             dayEvents = this.mutableEvents[formattedDate] || [];
             if (dayEvents.length) (_this$view$events2 = this.view.events).push.apply(_this$view$events2, _toConsumableArray(dayEvents.map(function (e) {
               return _this2.cleanupEvent(e);
@@ -4018,12 +4018,12 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
           break;
 
-        case 'day':
+        case "day":
           this.view.startDate = date;
           this.view.endDate = new Date(date);
           this.view.endDate.setHours(23, 59, 59); // End at 23:59:59.
 
-          dayEvents = this.mutableEvents[formatDate(date, 'yyyy-mm-dd', this.texts)] || [];
+          dayEvents = this.mutableEvents[formatDate(date, "yyyy-mm-dd", this.texts)] || [];
           if (dayEvents.length) this.view.events = dayEvents.map(function (e) {
             return _this2.cleanupEvent(e);
           });
@@ -4035,17 +4035,17 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
           view: view,
           startDate: this.view.startDate,
           endDate: this.view.endDate
-        }, this.view.id === 'month' ? {
+        }, this.view.id === "month" ? {
           firstCellDate: this.view.firstCellDate,
           lastCellDate: this.view.lastCellDate,
           outOfScopeEvents: this.view.outOfScopeEvents
         } : {}, {
           events: this.view.events
-        }, this.view.id === 'week' ? {
+        }, this.view.id === "week" ? {
           week: this.view.startDate.getWeek()
         } : {});
 
-        this.$emit('view-change', params);
+        this.$emit("view-change", params);
       }
     },
     findAncestor: function findAncestor(el, Class) {
@@ -4054,7 +4054,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       return el;
     },
     isDOMElementAnEvent: function isDOMElementAnEvent(el) {
-      return el.classList.contains('vuecal__event') || this.findAncestor(el, 'vuecal__event');
+      return el.classList.contains("vuecal__event") || this.findAncestor(el, "vuecal__event");
     },
     // Event resizing is started in cell component (onMouseDown) but place onMouseMove & onMouseUp
     // handlers in the single parent for performance.
@@ -4062,7 +4062,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       var resizeAnEvent = this.domEvents.resizeAnEvent;
       if (resizeAnEvent._eid === null) return;
       e.preventDefault();
-      var y = 'ontouchstart' in window ? e.touches[0].clientY : e.clientY;
+      var y = "ontouchstart" in window ? e.touches[0].clientY : e.clientY;
       resizeAnEvent.newHeight = resizeAnEvent.originalHeight + (y - resizeAnEvent.start);
       var cellEvents = this.mutableEvents[resizeAnEvent.startDate];
 
@@ -4087,8 +4087,8 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
         });
 
         if (event) {
-          this.emitWithEvent('event-change', event);
-          this.emitWithEvent('event-duration-change', event);
+          this.emitWithEvent("event-change", event);
+          this.emitWithEvent("event-duration-change", event);
         }
       } // If not mouse up on an event, unfocus any event except if just dragged.
 
@@ -4134,8 +4134,8 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
         });
       }
 
-      this.emitWithEvent('event-change', event);
-      this.emitWithEvent('event-title-change', event);
+      this.emitWithEvent("event-change", event);
+      this.emitWithEvent("event-title-change", event);
     },
     // Object of arrays of events indexed by dates.
     updateMutableEvents: function updateMutableEvents() {
@@ -4145,26 +4145,26 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       this.mutableEvents = {}; // Group events into dates.
 
       this.events.map(function (event) {
-        var _event$start$split = event.start.split(' '),
+        var _event$start$split = event.start.split(" "),
             _event$start$split2 = _slicedToArray(_event$start$split, 2),
             startDate = _event$start$split2[0],
             _event$start$split2$ = _event$start$split2[1],
-            startTime = _event$start$split2$ === void 0 ? '' : _event$start$split2$;
+            startTime = _event$start$split2$ === void 0 ? "" : _event$start$split2$;
 
-        var _startTime$split = startTime.split(':'),
+        var _startTime$split = startTime.split(":"),
             _startTime$split2 = _slicedToArray(_startTime$split, 2),
             hoursStart = _startTime$split2[0],
             minutesStart = _startTime$split2[1];
 
         var startTimeMinutes = parseInt(hoursStart) * 60 + parseInt(minutesStart);
 
-        var _event$end$split = event.end.split(' '),
+        var _event$end$split = event.end.split(" "),
             _event$end$split2 = _slicedToArray(_event$end$split, 2),
             endDate = _event$end$split2[0],
             _event$end$split2$ = _event$end$split2[1],
-            endTime = _event$end$split2$ === void 0 ? '' : _event$end$split2$;
+            endTime = _event$end$split2$ === void 0 ? "" : _event$end$split2$;
 
-        var _endTime$split = endTime.split(':'),
+        var _endTime$split = endTime.split(":"),
             _endTime$split2 = _slicedToArray(_endTime$split, 2),
             hoursEnd = _endTime$split2[0],
             minutesEnd = _endTime$split2[1];
@@ -4187,7 +4187,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
           endDate: endDate,
           endTime: endTime,
           endTimeMinutes: endTimeMinutes,
-          classes: (event.class || '').split(' ')
+          classes: (event.class || "").split(" ")
         }), event); // Make array reactive for future events creations & deletions.
 
         if (!(event.startDate in _this4.mutableEvents)) _this4.$set(_this4.mutableEvents, event.startDate, []); // eslint-disable-next-line
@@ -4201,13 +4201,13 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
             var eventPieces = [];
             var oneDayInMs = 24 * 60 * 60 * 1000;
 
-            var _startDate$split = startDate.split('-'),
+            var _startDate$split = startDate.split("-"),
                 _startDate$split2 = _slicedToArray(_startDate$split, 3),
                 y1 = _startDate$split2[0],
                 m1 = _startDate$split2[1],
                 d1 = _startDate$split2[2];
 
-            var _endDate$split = endDate.split('-'),
+            var _endDate$split = endDate.split("-"),
                 _endDate$split2 = _slicedToArray(_endDate$split, 3),
                 y2 = _endDate$split2[0],
                 m2 = _endDate$split2[1],
@@ -4216,7 +4216,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
             startDate = new Date(y1, parseInt(m1) - 1, d1);
             endDate = new Date(y2, parseInt(m2) - 1, d2);
             var datesDiff = Math.round(Math.abs((startDate.getTime() - endDate.getTime()) / oneDayInMs));
-            var startDateFormatted = formatDate(startDate, 'yyyy-mm-dd', _this4.texts); // Update First day event.
+            var startDateFormatted = formatDate(startDate, "yyyy-mm-dd", _this4.texts); // Update First day event.
 
             event.multipleDays = {
               start: true,
@@ -4224,15 +4224,14 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
               startTime: startTime,
               startTimeMinutes: startTimeMinutes,
               endDate: startDateFormatted,
-              endTime: '24:00',
+              endTime: "24:00",
               endTimeMinutes: 24 * 60,
-              daysCount: datesDiff + 1 // Generate event pieces ids to link them all together
-              // and update the first event linked events array with all ids of pieces.
-
-            };
+              daysCount: datesDiff + 1
+            }; // Generate event pieces ids to link them all together
+            // and update the first event linked events array with all ids of pieces.
 
             for (var i = 1; i <= datesDiff; i++) {
-              var date = formatDate(new Date(startDate).addDays(i), 'yyyy-mm-dd', _this4.texts);
+              var date = formatDate(new Date(startDate).addDays(i), "yyyy-mm-dd", _this4.texts);
               eventPieces.push({
                 _eid: "".concat(_this4._uid, "_").concat(_this4.eventIdIncrement++),
                 date: date
@@ -4265,10 +4264,10 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
                   middle: _i2 < datesDiff,
                   end: _i2 === datesDiff,
                   startDate: date,
-                  startTime: '00:00',
+                  startTime: "00:00",
                   startTimeMinutes: 0,
                   endDate: date,
-                  endTime: _i2 === datesDiff ? endTime : '24:00',
+                  endTime: _i2 === datesDiff ? endTime : "24:00",
                   endTimeMinutes: _i2 === datesDiff ? endTimeMinutes : 24 * 60,
                   daysCount: datesDiff + 1
                 }
@@ -4287,7 +4286,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
     getPosition: function getPosition(e) {
       var rect = e.target.getBoundingClientRect();
 
-      var _ref = 'ontouchstart' in window && e.touches ? e.touches[0] : e,
+      var _ref = "ontouchstart" in window && e.touches ? e.touches[0] : e,
           clientX = _ref.clientX,
           clientY = _ref.clientY;
 
@@ -4301,7 +4300,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       var e = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
       var eventOptions = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
       var startTimeMinutes = 0;
-      if (typeof e === 'number') startTimeMinutes = e;else if (typeof_typeof(e) === 'object') {
+      if (typeof e === "number") startTimeMinutes = e;else if (typeof_typeof(e) === "object") {
         var mouseY = this.getPosition(e).y;
         startTimeMinutes = mouseY * this.timeStep / parseInt(this.timeCellHeight) + this.timeFrom;
       }
@@ -4312,7 +4311,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       event = vue_calvue_type_script_lang_js_objectSpread({}, event); // Delete vue-cal specific props instead of returning a set of props so user
       // can place whatever they want inside an event and see it returned.
 
-      var discardProps = ['height', 'top', 'overlapped', 'overlapping', 'simultaneous', 'classes', 'split'];
+      var discardProps = ["height", "top", "overlapped", "overlapping", "simultaneous", "classes", "split"];
 
       for (var prop in event) {
         if (discardProps.includes(prop)) delete event[prop];
@@ -4320,36 +4319,36 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
       if (!event.multipleDays.daysCount) delete event.multipleDays; // Return date objects for easy manipulation.
 
-      var _event$start$split3 = event.start.split(' '),
+      var _event$start$split3 = event.start.split(" "),
           _event$start$split4 = _slicedToArray(_event$start$split3, 2),
           date1 = _event$start$split4[0],
           time1 = _event$start$split4[1];
 
-      var _ref2 = date1 && date1.split('-') || [0, 0, 0],
+      var _ref2 = date1 && date1.split("-") || [0, 0, 0],
           _ref3 = _slicedToArray(_ref2, 3),
           y1 = _ref3[0],
           m1 = _ref3[1],
           d1 = _ref3[2];
 
-      var _ref4 = time1 && time1.split(':') || [0, 0],
+      var _ref4 = time1 && time1.split(":") || [0, 0],
           _ref5 = _slicedToArray(_ref4, 2),
           h1 = _ref5[0],
           min1 = _ref5[1];
 
       event.startDate = new Date(y1, parseInt(m1) - 1, d1, h1, min1);
 
-      var _event$end$split3 = event.end.split(' '),
+      var _event$end$split3 = event.end.split(" "),
           _event$end$split4 = _slicedToArray(_event$end$split3, 2),
           date2 = _event$end$split4[0],
           time2 = _event$end$split4[1];
 
-      var _ref6 = date2 && date2.split('-') || [0, 0, 0],
+      var _ref6 = date2 && date2.split("-") || [0, 0, 0],
           _ref7 = _slicedToArray(_ref6, 3),
           y2 = _ref7[0],
           m2 = _ref7[1],
           d2 = _ref7[2];
 
-      var _ref8 = time2 && time2.split(':') || [0, 0],
+      var _ref8 = time2 && time2.split(":") || [0, 0],
           _ref9 = _slicedToArray(_ref8, 2),
           h2 = _ref9[0],
           min2 = _ref9[1];
@@ -4361,10 +4360,10 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       this.$emit(eventName, this.cleanupEvent(event));
     },
     updateSelectedDate: function updateSelectedDate(date) {
-      if (date && typeof date === 'string') date = date_utils_stringToDate(date);
+      if (date && typeof date === "string") date = date_utils_stringToDate(date);
 
       if (date && date instanceof Date) {
-        if (this.view.selectedDate) this.transitionDirection = this.view.selectedDate.getTime() > date.getTime() ? 'left' : 'right'; // Select the day at midnight in order to allow fetching events on whole day.
+        if (this.view.selectedDate) this.transitionDirection = this.view.selectedDate.getTime() > date.getTime() ? "left" : "right"; // Select the day at midnight in order to allow fetching events on whole day.
 
         date.setHours(0, 0, 0);
         this.view.selectedDate = date;
@@ -4373,7 +4372,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
     }
   },
   created: function created() {
-    if (this.locale !== 'en') this.loadLocale(this.locale); // Init the array of events, then keep listening for changes in watcher.
+    if (this.locale !== "en") this.loadLocale(this.locale); // Init the array of events, then keep listening for changes in watcher.
 
     this.updateMutableEvents(this.events);
     this.view.id = this.defaultView;
@@ -4383,13 +4382,13 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
     }
   },
   mounted: function mounted() {
-    var hasTouch = 'ontouchstart' in window;
+    var hasTouch = "ontouchstart" in window;
 
     if (this.editableEvents) {
-      window.addEventListener(hasTouch ? 'touchmove' : 'mousemove', this.onMouseMove, {
+      window.addEventListener(hasTouch ? "touchmove" : "mousemove", this.onMouseMove, {
         passive: false
       });
-      window.addEventListener(hasTouch ? 'touchend' : 'mouseup', this.onMouseUp);
+      window.addEventListener(hasTouch ? "touchend" : "mouseup", this.onMouseUp);
     } // Disable context menu on touch devices on the whole vue-cal instance.
 
 
@@ -4404,58 +4403,58 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       view: this.view.id,
       startDate: this.view.startDate,
       endDate: this.view.endDate
-    }, this.view.id === 'month' ? {
+    }, this.view.id === "month" ? {
       firstCellDate: this.view.firstCellDate,
       lastCellDate: this.view.lastCellDate
     } : {}, {
       events: this.view.events
-    }, this.view.id === 'week' ? {
+    }, this.view.id === "week" ? {
       week: this.view.startDate.getWeek()
     } : {});
 
-    this.$emit('ready', params);
+    this.$emit("ready", params);
     this.ready = true;
   },
   beforeDestroy: function beforeDestroy() {
-    var hasTouch = 'ontouchstart' in window;
-    window.removeEventListener(hasTouch ? 'touchmove' : 'mousemove', this.onMouseMove, {
+    var hasTouch = "ontouchstart" in window;
+    window.removeEventListener(hasTouch ? "touchmove" : "mousemove", this.onMouseMove, {
       passive: false
     });
-    window.removeEventListener(hasTouch ? 'touchend' : 'mouseup', this.onMouseUp);
+    window.removeEventListener(hasTouch ? "touchend" : "mouseup", this.onMouseUp);
   },
   computed: {
     selectedDateFormatted: function selectedDateFormatted() {
-      return formatDate(this.view.selectedDate, 'yyyy-mm-dd', this.texts);
+      return formatDate(this.view.selectedDate, "yyyy-mm-dd", this.texts);
     },
     views: function views() {
       return {
-        years: {
-          label: this.texts.years,
-          enabled: !this.disableViews.includes('years')
-        },
-        year: {
-          label: this.texts.year,
-          enabled: !this.disableViews.includes('year')
-        },
-        month: {
-          label: this.texts.month,
-          enabled: !this.disableViews.includes('month')
+        day: {
+          label: this.texts.day,
+          enabled: !this.disableViews.includes("day")
         },
         week: {
           label: this.texts.week,
-          enabled: !this.disableViews.includes('week')
+          enabled: !this.disableViews.includes("week")
         },
-        day: {
-          label: this.texts.day,
-          enabled: !this.disableViews.includes('day')
+        month: {
+          label: this.texts.month,
+          enabled: !this.disableViews.includes("month")
+        },
+        year: {
+          label: this.texts.year,
+          enabled: !this.disableViews.includes("year")
+        },
+        years: {
+          label: this.texts.years,
+          enabled: !this.disableViews.includes("years")
         }
       };
     },
     hasTimeColumn: function hasTimeColumn() {
-      return this.time && ['week', 'day'].includes(this.view.id);
+      return this.time && ["week", "day"].includes(this.view.id);
     },
     isShortMonthView: function isShortMonthView() {
-      return this.view.id === 'month' && this.eventsOnMonthView === 'short';
+      return this.view.id === "month" && this.eventsOnMonthView === "short";
     },
     // For week & day views.
     timeCells: function timeCells() {
@@ -4465,7 +4464,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
         timeCells.push({
           hours: Math.floor(i / 60),
           minutes: i % 60,
-          label: date_utils_formatTime(i, this.timeFormat || (this['12Hour'] ? 'h:mm{am}' : 'HH:mm')),
+          label: date_utils_formatTime(i, this.timeFormat || (this["12Hour"] ? "h:mm{am}" : "HH:mm")),
           value: i
         });
       }
@@ -4474,16 +4473,16 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
     },
     // Whether the current view has days splits.
     hasSplits: function hasSplits() {
-      return !!this.splitDays.length && ['week', 'day'].includes(this.view.id);
+      return !!this.splitDays.length && ["week", "day"].includes(this.view.id);
     },
     minTimestamp: function minTimestamp() {
       var date = null;
-      if (this.minDate && typeof this.minDate === 'string') date = date_utils_stringToDate(this.minDate);else if (this.minDate && this.minDate instanceof Date) date = this.minDate;
+      if (this.minDate && typeof this.minDate === "string") date = date_utils_stringToDate(this.minDate);else if (this.minDate && this.minDate instanceof Date) date = this.minDate;
       return date ? date.getTime() : 0;
     },
     maxTimestamp: function maxTimestamp() {
       var date = null;
-      if (this.maxDate && typeof this.maxDate === 'string') date = date_utils_stringToDate(this.maxDate);else if (this.maxDate && this.minDate instanceof Date) date = this.maxDate;
+      if (this.maxDate && typeof this.maxDate === "string") date = date_utils_stringToDate(this.maxDate);else if (this.maxDate && this.minDate instanceof Date) date = this.maxDate;
       return date ? date.getTime() : 0;
     },
     weekDays: function weekDays() {
@@ -4523,7 +4522,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       });
     },
     weekDaysInHeader: function weekDaysInHeader() {
-      return this.view.id === 'month' || this.view.id === 'week' && !this.minCellWidth;
+      return this.view.id === "month" || this.view.id === "week" && !this.minCellWidth;
     },
     months: function months() {
       return this.texts.months.map(function (month) {
@@ -4533,35 +4532,35 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       });
     },
     viewTitle: function viewTitle() {
-      var title = '';
+      var title = "";
       var date = this.view.startDate;
       var year = date.getFullYear();
       var month = date.getMonth();
 
       switch (this.view.id) {
-        case 'years':
+        case "years":
           title = this.texts.years;
           break;
 
-        case 'year':
+        case "year":
           title = year;
           break;
 
-        case 'month':
+        case "month":
           title = "".concat(this.months[month].label, " ").concat(year);
           break;
 
-        case 'week':
+        case "week":
           var lastDayOfWeek = date.addDays(6);
-          var formattedMonthYear = formatDate(date, this.xsmall ? 'mmm yyyy' : 'mmmm yyyy', this.texts); // If week is not ending in the same month it started in.
+          var formattedMonthYear = formatDate(date, this.xsmall ? "mmm yyyy" : "mmmm yyyy", this.texts); // If week is not ending in the same month it started in.
 
           if (lastDayOfWeek.getMonth() !== date.getMonth()) {
-            var _formattedMonthYear$s = formattedMonthYear.split(' '),
+            var _formattedMonthYear$s = formattedMonthYear.split(" "),
                 _formattedMonthYear$s2 = _slicedToArray(_formattedMonthYear$s, 2),
                 m1 = _formattedMonthYear$s2[0],
                 y1 = _formattedMonthYear$s2[1];
 
-            var _formatDate$split = formatDate(lastDayOfWeek, this.xsmall ? 'mmm yyyy' : 'mmmm yyyy', this.texts).split(' '),
+            var _formatDate$split = formatDate(lastDayOfWeek, this.xsmall ? "mmm yyyy" : "mmmm yyyy", this.texts).split(" "),
                 _formatDate$split2 = _slicedToArray(_formatDate$split, 2),
                 m2 = _formatDate$split2[0],
                 y2 = _formatDate$split2[1];
@@ -4572,7 +4571,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
           title = "".concat(this.texts.week, " ").concat(date.getWeek(), " (").concat(formattedMonthYear, ")");
           break;
 
-        case 'day':
+        case "day":
           title = formatDate(date, this.texts.dateFormat, this.texts);
           break;
       }
@@ -4587,7 +4586,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
       var todayFound = false;
 
       switch (this.view.id) {
-        case 'years':
+        case "years":
           fromYear = this.view.startDate.getFullYear();
           cells = Array.apply(null, Array(25)).map(function (cell, i) {
             var startDate = new Date(fromYear + i, 0, 1);
@@ -4596,7 +4595,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
             return {
               startDate: startDate,
-              formattedDate: formatDate(startDate, 'yyyy-mm-dd', _this5.texts),
+              formattedDate: formatDate(startDate, "yyyy-mm-dd", _this5.texts),
               endDate: endDate,
               content: fromYear + i,
               current: fromYear + i === _this5.now.getFullYear()
@@ -4604,7 +4603,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
           });
           break;
 
-        case 'year':
+        case "year":
           fromYear = this.view.startDate.getFullYear();
           cells = Array.apply(null, Array(12)).map(function (cell, i) {
             var startDate = new Date(fromYear, i, 1);
@@ -4613,7 +4612,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
             return {
               startDate: startDate,
-              formattedDate: formatDate(startDate, 'yyyy-mm-dd', _this5.texts),
+              formattedDate: formatDate(startDate, "yyyy-mm-dd", _this5.texts),
               endDate: endDate,
               content: _this5.xsmall ? _this5.months[i].label.substr(0, 3) : _this5.months[i].label,
               current: i === _this5.now.getMonth() && fromYear === _this5.now.getFullYear()
@@ -4621,7 +4620,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
           });
           break;
 
-        case 'month':
+        case "month":
           var month = this.view.startDate.getMonth();
           var selectedDateAtMidnight = new Date(this.view.selectedDate.getTime());
           selectedDateAtMidnight.setHours(0, 0, 0, 0);
@@ -4637,7 +4636,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
             var isToday = !todayFound && startDate && startDate.getDate() === _this5.now.getDate() && startDate.getMonth() === _this5.now.getMonth() && startDate.getFullYear() === _this5.now.getFullYear() && !todayFound++;
             return {
               startDate: startDate,
-              formattedDate: formatDate(startDate, 'yyyy-mm-dd', _this5.texts),
+              formattedDate: formatDate(startDate, "yyyy-mm-dd", _this5.texts),
               endDate: endDate,
               content: startDate.getDate(),
               today: isToday,
@@ -4653,7 +4652,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
           break;
 
-        case 'week':
+        case "week":
           todayFound = false;
           var firstDayOfWeek = this.view.startDate;
           cells = this.weekDays.map(function (cell, i) {
@@ -4663,21 +4662,21 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
             return {
               startDate: startDate,
-              formattedDate: formatDate(startDate, 'yyyy-mm-dd', _this5.texts),
+              formattedDate: formatDate(startDate, "yyyy-mm-dd", _this5.texts),
               endDate: endDate,
               today: !todayFound && isDateToday(startDate) && !todayFound++
             };
           });
           break;
 
-        case 'day':
+        case "day":
           var startDate = this.view.startDate;
           var endDate = new Date(this.view.startDate);
           endDate.setHours(23, 59, 59); // End at 23:59:59.
 
           cells = [{
             startDate: startDate,
-            formattedDate: formatDate(startDate, 'yyyy-mm-dd', this.texts),
+            formattedDate: formatDate(startDate, "yyyy-mm-dd", this.texts),
             endDate: endDate,
             today: isDateToday(startDate)
           }];
@@ -4689,12 +4688,12 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
     cssClasses: function cssClasses() {
       var _ref10;
 
-      return _ref10 = {}, _defineProperty(_ref10, "vuecal--".concat(this.view.id, "-view"), true), _defineProperty(_ref10, "vuecal--".concat(this.locale), this.locale), _defineProperty(_ref10, 'vuecal--no-time', !this.time), _defineProperty(_ref10, 'vuecal--view-with-time', this.hasTimeColumn), _defineProperty(_ref10, 'vuecal--time-12-hour', this['12Hour']), _defineProperty(_ref10, 'vuecal--click-to-navigate', this.clickToNavigate), _defineProperty(_ref10, 'vuecal--hide-weekends', this.hideWeekends), _defineProperty(_ref10, 'vuecal--split-days', this.hasSplits), _defineProperty(_ref10, 'vuecal--overflow-x', this.minCellWidth), _defineProperty(_ref10, 'vuecal--small', this.small), _defineProperty(_ref10, 'vuecal--xsmall', this.xsmall), _defineProperty(_ref10, 'vuecal--no-event-overlaps', this.noEventOverlaps), _defineProperty(_ref10, 'vuecal--dragging-event', this.domEvents.resizeAnEvent.start), _defineProperty(_ref10, 'vuecal--events-on-month-view', this.eventsOnMonthView), _defineProperty(_ref10, 'vuecal--short-events', this.view.id === 'month' && this.eventsOnMonthView === 'short'), _ref10;
+      return _ref10 = {}, _defineProperty(_ref10, "vuecal--".concat(this.view.id, "-view"), true), _defineProperty(_ref10, "vuecal--".concat(this.locale), this.locale), _defineProperty(_ref10, "vuecal--no-time", !this.time), _defineProperty(_ref10, "vuecal--view-with-time", this.hasTimeColumn), _defineProperty(_ref10, "vuecal--time-12-hour", this["12Hour"]), _defineProperty(_ref10, "vuecal--click-to-navigate", this.clickToNavigate), _defineProperty(_ref10, "vuecal--hide-weekends", this.hideWeekends), _defineProperty(_ref10, "vuecal--split-days", this.hasSplits), _defineProperty(_ref10, "vuecal--overflow-x", this.minCellWidth), _defineProperty(_ref10, "vuecal--small", this.small), _defineProperty(_ref10, "vuecal--xsmall", this.xsmall), _defineProperty(_ref10, "vuecal--no-event-overlaps", this.noEventOverlaps), _defineProperty(_ref10, "vuecal--dragging-event", this.domEvents.resizeAnEvent.start), _defineProperty(_ref10, "vuecal--events-on-month-view", this.eventsOnMonthView), _defineProperty(_ref10, "vuecal--short-events", this.view.id === "month" && this.eventsOnMonthView === "short"), _ref10;
     }
   },
   filters: {
     formatTime: function formatTime(value, format) {
-      return date_utils_formatTime(value, format) || '';
+      return date_utils_formatTime(value, format) || "";
     }
   },
   watch: {
