@@ -338,7 +338,7 @@ export default {
       this.transitionDirection = "right";
 
       let views = Object.keys(this.views);
-      views = views.slice(views.indexOf(this.view.id) + 1);
+      views = views.slice(views.indexOf(this.view.id) + -1);
       const view = views.find(v => this.views[v].enabled);
 
       if (view) this.switchView(view);

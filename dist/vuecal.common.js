@@ -1907,7 +1907,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"34e2ea1b-vue-loader-template"}!/Users/simon/.config/yarn/global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/vue-cal/index.vue?vue&type=template&id=5d67779e&lang=pug&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"34e2ea1b-vue-loader-template"}!/Users/simon/.config/yarn/global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/vue-cal/index.vue?vue&type=template&id=2b923fde&lang=pug&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"vuecal",staticClass:"vuecal__flex vuecal",class:_vm.cssClasses,attrs:{"column":"","lang":_vm.locale}},[_c('vuecal-header',{attrs:{"options":_vm.$props,"view-props":{ views: _vm.views, view: _vm.view, weekDaysInHeader: _vm.weekDaysInHeader },"months":_vm.months,"week-days":_vm.weekDays,"week-days-short":_vm.weekDaysShort,"switch-to-narrower-view":_vm.switchToNarrowerView}},[_vm._t("arrow-prev",[_c('i',{staticClass:"angle"})],{"slot":"arrow-prev"}),_vm._t("arrow-next",[_c('i',{staticClass:"angle"})],{"slot":"arrow-next"}),_vm._t("today-button",[_c('span',{staticClass:"default"},[_vm._v(_vm._s(_vm.texts.today))])],{"slot":"today-btn"}),_vm._t("title",[_vm._v(_vm._s(_vm.viewTitle))],{"slot":"title","title":_vm.viewTitle,"view":_vm.view})],2),(!_vm.hideBody)?_c('div',{staticClass:"vuecal__flex vuecal__body",attrs:{"grow":""}},[_c('transition',{attrs:{"name":("slide-fade--" + _vm.transitionDirection),"appear":_vm.transitions}},[_c('div',{key:_vm.transitions ? _vm.view.id : false,staticClass:"vuecal__flex",staticStyle:{"min-width":"100%"},attrs:{"column":""}},[(_vm.showAllDayEvents && _vm.hasTimeColumn)?_c('div',{staticClass:"vuecal__flex vuecal__all-day"},[_c('span',{staticStyle:{"width":"3em"}},[_c('span',[_vm._v(_vm._s(_vm.texts.allDay))])]),_c('div',{staticClass:"vuecal__flex vuecal__cells",class:((_vm.view.id) + "-view"),attrs:{"grow":"","wrap":!_vm.minCellWidth || _vm.view.id !== 'week',"column":!!_vm.minCellWidth}},_vm._l((_vm.viewCells),function(cell,i){return _c('vuecal-cell',{key:i,attrs:{"options":_vm.$props,"data":cell,"all-day":true,"min-timestamp":_vm.minTimestamp,"max-timestamp":_vm.maxTimestamp,"splits":_vm.hasSplits && _vm.splitDays || []},scopedSlots:_vm._u([{key:"event-renderer",fn:function(ref){
 var event = ref.event;
 var view = ref.view;
@@ -1922,7 +1922,7 @@ return _c('div',{attrs:{"view":view,"event":event}},[_vm._t("event-renderer",[(_
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/vue-cal/index.vue?vue&type=template&id=5d67779e&lang=pug&
+// CONCATENATED MODULE: ./src/components/vue-cal/index.vue?vue&type=template&id=2b923fde&lang=pug&
 
 // EXTERNAL MODULE: /Users/simon/.config/yarn/global/node_modules/core-js/modules/es7.object.get-own-property-descriptors.js
 var es7_object_get_own_property_descriptors = __webpack_require__("c6e0");
@@ -2535,12 +2535,12 @@ var headervue_type_template_id_24a14810_lang_pug_staticRenderFns = []
 
 // CONCATENATED MODULE: ./src/components/vue-cal/header.vue?vue&type=template&id=24a14810&lang=pug&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"34e2ea1b-vue-loader-template"}!/Users/simon/.config/yarn/global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/vue-cal/weekdays-headings.vue?vue&type=template&id=575661a4&lang=pug&
-var weekdays_headingsvue_type_template_id_575661a4_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vuecal__flex vuecal__weekdays-headings"},_vm._l((_vm.headings),function(heading,i){return _c('div',{key:i,staticClass:"vuecal__flex vuecal__heading",class:{ today: heading.today, clickable: _vm.cellHeadingsClickable },style:(_vm.weekdayCellStyles),on:{"click":function($event){_vm.view.id === 'week' && _vm.selectCell(heading.date)},"dblclick":function($event){_vm.view.id === 'week' && _vm.vuecal.dblClickToNavigate && _vm.switchToNarrowerView()}}},[_c('transition',{attrs:{"name":("slide-fade--" + _vm.transitionDirection),"appear":_vm.vuecal.transitions}},[_c('span',{key:_vm.vuecal.transitions ? (i + "-" + (heading.dayOfMonth)) : false},[_c('span',{staticClass:"full"},[_vm._v(_vm._s(heading.full))]),_c('span',{staticClass:"small"},[_vm._v(_vm._s(heading.small))]),_c('span',{staticClass:"xsmall"},[_vm._v(_vm._s(heading.xsmall))]),(heading.dayOfMonth)?_c('span',[_vm._v(" "+_vm._s(heading.dayOfMonth))]):_vm._e()])])],1)}),0)}
-var weekdays_headingsvue_type_template_id_575661a4_lang_pug_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"34e2ea1b-vue-loader-template"}!/Users/simon/.config/yarn/global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/vue-cal/weekdays-headings.vue?vue&type=template&id=e6bfaf24&lang=pug&
+var weekdays_headingsvue_type_template_id_e6bfaf24_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vuecal__flex vuecal__weekdays-headings"},_vm._l((_vm.headings),function(heading,i){return _c('div',{key:i,staticClass:"vuecal__flex vuecal__heading",class:{ today: heading.today, clickable: _vm.cellHeadingsClickable },style:(_vm.weekdayCellStyles),on:{"click":function($event){_vm.view.id === 'week' && _vm.selectCell(heading.date)},"dblclick":function($event){_vm.view.id === 'week' && _vm.vuecal.dblClickToNavigate && _vm.switchToNarrowerView()}}},[_c('transition',{attrs:{"name":("slide-fade--" + _vm.transitionDirection),"appear":_vm.vuecal.transitions}},[_c('span',{key:_vm.vuecal.transitions ? (i + "-" + (heading.dayOfMonth)) : false},[_c('span',{staticClass:"full"},[_vm._v(_vm._s(heading.full))]),_c('span',{staticClass:"small"},[_vm._v(_vm._s(heading.small))]),_c('span',{staticClass:"xsmall"},[_vm._v(_vm._s(heading.xsmall))]),(heading.dayOfMonth)?_c('span',[_vm._v(" "+_vm._s(heading.dayOfMonth))]):_vm._e()])])],1)}),0)}
+var weekdays_headingsvue_type_template_id_e6bfaf24_lang_pug_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/vue-cal/weekdays-headings.vue?vue&type=template&id=575661a4&lang=pug&
+// CONCATENATED MODULE: ./src/components/vue-cal/weekdays-headings.vue?vue&type=template&id=e6bfaf24&lang=pug&
 
 // CONCATENATED MODULE: ./src/components/vue-cal/cell-utils.js
 
@@ -2660,8 +2660,7 @@ function weekdays_headingsvue_type_script_lang_js_objectSpread(target) { for (va
             var date = _this.view.startDate.addDays(i);
 
             return weekdays_headingsvue_type_script_lang_js_objectSpread({
-              full: _this.weekDaysShort ? _this.weekDaysShort[i].label : cell.label.substr(0, 3),
-              //full: cell.label,
+              full: cell.label,
               // If defined in i18n file, weekDaysShort overrides default truncation of
               // week days when does not fit on screen or with small/xsmall options.
               small: _this.weekDaysShort ? _this.weekDaysShort[i].label : cell.label.substr(0, 3),
@@ -2798,8 +2797,8 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   vue_cal_weekdays_headingsvue_type_script_lang_js_,
-  weekdays_headingsvue_type_template_id_575661a4_lang_pug_render,
-  weekdays_headingsvue_type_template_id_575661a4_lang_pug_staticRenderFns,
+  weekdays_headingsvue_type_template_id_e6bfaf24_lang_pug_render,
+  weekdays_headingsvue_type_template_id_e6bfaf24_lang_pug_staticRenderFns,
   false,
   null,
   null,
@@ -3890,7 +3889,7 @@ function vue_calvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i
 
       this.transitionDirection = "right";
       var views = Object.keys(this.views);
-      views = views.slice(views.indexOf(this.view.id) + 1);
+      views = views.slice(views.indexOf(this.view.id) + -1);
       var view = views.find(function (v) {
         return _this.views[v].enabled;
       });

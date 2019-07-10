@@ -66,10 +66,7 @@ export default {
             const date = this.view.startDate.addDays(i);
 
             return {
-              full: this.weekDaysShort
-                ? this.weekDaysShort[i].label
-                : cell.label.substr(0, 3),
-              //full: cell.label,
+              full: cell.label,
               // If defined in i18n file, weekDaysShort overrides default truncation of
               // week days when does not fit on screen or with small/xsmall options.
               small: this.weekDaysShort
