@@ -14,6 +14,7 @@
         span.small {{ heading.small }}
         span.xsmall {{ heading.xsmall }}
         span(v-if="heading.dayOfMonth") &nbsp;{{ heading.dayOfMonth }}
+        span.month(v-if="heading.dayOfMonth") &nbsp;{{ heading.month }}
 </template>
 
 <script>
@@ -75,6 +76,7 @@ export default {
               xsmall: this.weekDaysShort
                 ? this.weekDaysShort[i].label
                 : cell.label.substr(0, 1),
+              month: date.getMonth(),
 
               // Only for week view.
               ...(this.view.id === "week"
