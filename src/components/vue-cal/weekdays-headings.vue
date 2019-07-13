@@ -76,7 +76,7 @@ export default {
               xsmall: this.weekDaysShort
                 ? this.weekDaysShort[i].label
                 : cell.label.substr(0, 1),
-              month: date.getMonth(),
+              month: date.toLocaleDateString("sv", { month: "long" }),
 
               // Only for week view.
               ...(this.view.id === "week"

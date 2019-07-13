@@ -2544,12 +2544,12 @@ var headervue_type_template_id_24a14810_lang_pug_staticRenderFns = []
 
 // CONCATENATED MODULE: ./src/components/vue-cal/header.vue?vue&type=template&id=24a14810&lang=pug&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"34e2ea1b-vue-loader-template"}!/Users/simon/.config/yarn/global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/vue-cal/weekdays-headings.vue?vue&type=template&id=925a6c24&lang=pug&
-var weekdays_headingsvue_type_template_id_925a6c24_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vuecal__flex vuecal__weekdays-headings"},_vm._l((_vm.headings),function(heading,i){return _c('div',{key:i,staticClass:"vuecal__flex vuecal__heading",class:{ today: heading.today, clickable: _vm.cellHeadingsClickable },style:(_vm.weekdayCellStyles),on:{"click":function($event){_vm.view.id === 'week' && _vm.selectCell(heading.date)},"dblclick":function($event){_vm.view.id === 'week' && _vm.vuecal.dblClickToNavigate && _vm.switchToNarrowerView()}}},[_c('transition',{attrs:{"name":("slide-fade--" + _vm.transitionDirection),"appear":_vm.vuecal.transitions}},[_c('span',{key:_vm.vuecal.transitions ? (i + "-" + (heading.dayOfMonth)) : false},[_c('span',{staticClass:"full"},[_vm._v(_vm._s(heading.full))]),_c('span',{staticClass:"small"},[_vm._v(_vm._s(heading.small))]),_c('span',{staticClass:"xsmall"},[_vm._v(_vm._s(heading.xsmall))]),(heading.dayOfMonth)?_c('span',[_vm._v(" "+_vm._s(heading.dayOfMonth))]):_vm._e(),(heading.dayOfMonth)?_c('span',{staticClass:"month"},[_vm._v(" "+_vm._s(heading.month))]):_vm._e()])])],1)}),0)}
-var weekdays_headingsvue_type_template_id_925a6c24_lang_pug_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"34e2ea1b-vue-loader-template"}!/Users/simon/.config/yarn/global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/vue-cal/weekdays-headings.vue?vue&type=template&id=2adade09&lang=pug&
+var weekdays_headingsvue_type_template_id_2adade09_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vuecal__flex vuecal__weekdays-headings"},_vm._l((_vm.headings),function(heading,i){return _c('div',{key:i,staticClass:"vuecal__flex vuecal__heading",class:{ today: heading.today, clickable: _vm.cellHeadingsClickable },style:(_vm.weekdayCellStyles),on:{"click":function($event){_vm.view.id === 'week' && _vm.selectCell(heading.date)},"dblclick":function($event){_vm.view.id === 'week' && _vm.vuecal.dblClickToNavigate && _vm.switchToNarrowerView()}}},[_c('transition',{attrs:{"name":("slide-fade--" + _vm.transitionDirection),"appear":_vm.vuecal.transitions}},[_c('span',{key:_vm.vuecal.transitions ? (i + "-" + (heading.dayOfMonth)) : false},[_c('span',{staticClass:"full"},[_vm._v(_vm._s(heading.full))]),_c('span',{staticClass:"small"},[_vm._v(_vm._s(heading.small))]),_c('span',{staticClass:"xsmall"},[_vm._v(_vm._s(heading.xsmall))]),(heading.dayOfMonth)?_c('span',[_vm._v(" "+_vm._s(heading.dayOfMonth))]):_vm._e(),(heading.dayOfMonth)?_c('span',{staticClass:"month"},[_vm._v(" "+_vm._s(heading.month))]):_vm._e()])])],1)}),0)}
+var weekdays_headingsvue_type_template_id_2adade09_lang_pug_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/vue-cal/weekdays-headings.vue?vue&type=template&id=925a6c24&lang=pug&
+// CONCATENATED MODULE: ./src/components/vue-cal/weekdays-headings.vue?vue&type=template&id=2adade09&lang=pug&
 
 // CONCATENATED MODULE: ./src/components/vue-cal/cell-utils.js
 
@@ -2675,7 +2675,9 @@ function weekdays_headingsvue_type_script_lang_js_objectSpread(target) { for (va
               // week days when does not fit on screen or with small/xsmall options.
               small: _this.weekDaysShort ? _this.weekDaysShort[i].label : cell.label.substr(0, 3),
               xsmall: _this.weekDaysShort ? _this.weekDaysShort[i].label : cell.label.substr(0, 1),
-              month: date.getMonth()
+              month: date.toLocaleDateString("sv", {
+                month: "long"
+              })
             }, _this.view.id === "week" ? {
               dayOfMonth: date.getDate(),
               date: date,
@@ -2808,8 +2810,8 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   vue_cal_weekdays_headingsvue_type_script_lang_js_,
-  weekdays_headingsvue_type_template_id_925a6c24_lang_pug_render,
-  weekdays_headingsvue_type_template_id_925a6c24_lang_pug_staticRenderFns,
+  weekdays_headingsvue_type_template_id_2adade09_lang_pug_render,
+  weekdays_headingsvue_type_template_id_2adade09_lang_pug_staticRenderFns,
   false,
   null,
   null,
