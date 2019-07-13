@@ -14,7 +14,7 @@
         span.small {{ heading.small }}
         span.xsmall {{ heading.xsmall }}
         span(v-if="heading.dayOfMonth") &nbsp;{{ heading.dayOfMonth }}
-        p.month(v-if="heading.dayOfMonth") &nbsp;{{ heading.month }}
+      span.month(v-if="heading.dayOfMonth") &nbsp;{{ heading.month }}
 </template>
 
 <script>
