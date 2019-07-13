@@ -8,13 +8,13 @@
     @click="view.id === 'week' && selectCell(heading.date)"
     @dblclick="view.id === 'week' && vuecal.dblClickToNavigate && switchToNarrowerView()")
     transition(:name="`slide-fade--${transitionDirection}`" :appear="vuecal.transitions")
-      span(:key="vuecal.transitions ? `${i}-${heading.dayOfMonth}` : false")
-        //- For small/xsmall option. 3 media queries also truncate weekdays.
-        span.full {{ heading.full }}
-        span.small {{ heading.small }}
-        span.xsmall {{ heading.xsmall }}
-        span(v-if="heading.dayOfMonth") &nbsp;{{ heading.dayOfMonth }}
-      span.month(v-if="heading.dayOfMonth") &nbsp;{{ heading.month }}
+      div(:key="vuecal.transitions ? `${i}-${heading.dayOfMonth}` : false")
+        span
+          span.full {{ heading.full }}
+          span.small {{ heading.small }}
+          span.xsmall {{ heading.xsmall }}
+          span(v-if="heading.dayOfMonth") &nbsp;{{ heading.dayOfMonth }}
+        span.month(v-if="heading.dayOfMonth") &nbsp;{{ heading.month }}
 </template>
 
 <script>
